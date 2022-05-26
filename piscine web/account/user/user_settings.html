@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>paramètres</title>
+</head>
+<body class="grid-container" >
+
+    <!--<div class="topnav"> -->
+    <header>
+        <div  id="home">
+            <a  href="../../home.html">
+                <img class="logo" src="../../img/Sans%20titre.png" alt="home" />
+
+            </a>
+        </div>
+        <div id="dropdown" class="dropdown">
+            <button class="dropbtn">Tout Parcourir</button>
+            <div class="dropdown-content">
+                <a href="#">Médecine généraliste</a>
+                <a href="#">Médecine spécialisée</a>
+                <a href="#">trouver un Laboratoire</a>
+            </div>
+        </div>
+
+        <div  id="searchbar">
+            <input  type="text" name="search" placeholder="Rechercher...">
+        </div>
+
+        <div  id="login">
+            <button id="item-4"   name="connexion">Connexion</button>
+        </div>
+    </header>
+    <!----END TOP navbar-->
+
+    <nav>
+        <a href="user_profile.html" class="nav_btn">mon Profil</a>
+        <a href="user_RDV.html" class="nav_btn">mes RDV</a>
+        <a href="user_mailbox.html" class="nav_btn">messagerie</a>
+        <a href="user_settings.html" class="nav_btn">paramètres</a>
+        <a href="user_history.html" class="nav_btn">historique</a>
+
+    </nav>
+
+    <section class="settings">
+    <h2>Paramètres</h2>
+
+    <button type="btn" onclick="modifyPassword()">modifier le mot de passe</button>
+    <div class="modify" id="modify_password">
+
+        <label for="psw"><b>old-password</b></label>
+        <input type="password" placeholder="password" name="psw" required>
+
+        <label for="new_psw"><b>new-password</b></label>
+        <input type="password" placeholder="password" name="new_psw" required>
+
+        <label for="confirm_psw"><b>confirm-password</b></label>
+        <input type="password" placeholder="password" name="confirm_psw" required>
+
+
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+        <a href="forgot-password.html">mot de pass oublié ?</a>
+
+    </div>
+
+    <button type="btn" onclick="modifypicture()">modifier ma photo de profil</button>
+    <div class="modify" id="modify_picture">
+
+        <input type="file" name="new_picture" required accept="image/png, image/jpeg,image/jpg,image/gif" >
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </div>
+
+    <button type="btn" onclick="modifyFirstname()">Modifier prenom </button>
+    <div class="modify" id="modify_Fisrtname">
+
+        <input type="text" name="new_Firstname" required maxlength="20">
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </div>
+
+    <button type="btn" onclick="modifyLastname()">Modifier Nom </button>
+    <div class="modify" id="modify_Lastname">
+
+        <input type="text" name="new_Lastname" required maxlength="30">
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </div>
+
+    <button type="btn" onclick="modifyLastname()">Modifier Dossier medical </button>
+    <div class="modify" id="modify_medicalFolder">
+
+        <input type="file" name="new_Lastname" required >
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </div>
+
+    <button type="btn" onclick="modifyLastname()">Modifier ville </button>
+    <div class="modify" id="modify_Location">
+
+        <input type="text" name="new_Lastname" required maxlength="30">
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </div>
+
+    <button type="btn" onclick="modifyLastname()">Modifier numero telephone </button>
+    <div class="modify" id="modify_Telephone">
+
+        <input type="tel" name="new_Telephone" required maxlength="20">
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </div>
+
+    <button type="btn" onclick="modifyLastname()">Modifier carte vitale </button>
+    <div class="modify" id="modify_Healthcard">
+
+        <input type="file" name="new_Lastname" required accept="image/png, image/jpeg,image/pdf">
+        <button type="submit" class="btn">modifier</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </div>
+
+        <button type="btn" onclick="modifyLastname()">Modifier infos bancaires </button>
+        <div class="modify" id="modify_Creditcard">
+
+            <h4>Numero carte:</h4>
+            <input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" required>
+            <h4>Date d'expiration:</h4>
+            <input type="text" class="cc-exp" pattern="\d*" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" required maxlength="9">
+            <h4>CVC</h4>
+            <input type="text" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="Security code" required  autocomplete="off">
+            <h4>Restrict Numeric</h4>
+            <input type="text" data-numeric>
+            <button type="submit" class="btn">modifier</button>
+            <button type="button" class="btn cancel" onclick="closeForm()"></button>
+        </div>
+
+
+    </section>
+
+    <footer></footer>
+
+</body>
+</html>

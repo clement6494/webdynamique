@@ -1,0 +1,166 @@
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-chat-button {
+    height: 50px;
+    width: 50px;
+    background-color: var(--cyan);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+    bottom: 23px;
+    right: 28px;
+
+    text-align: center;
+}
+
+.message-icon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background-color: var(--white);
+    height: 25px;
+    width: 25px;
+    clip-path: polygon(0 50%, 100% 0, 50% 100%, 26% 76%, 74% 24%, 22% 72%);}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 2px solid transparent;
+    border-radius: 40px 40px 0 40px;
+    background-image: linear-gradient(-45deg, var(--light-cyan), var(--dark-cyan));
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    margin: 2px;
+    border: 2px solid transparent ;
+    border-radius: 35px 35px 0 35px;
+    max-width: 300px;
+    padding: 10px;
+    background-color: var(--white);
+}
+
+/* Full-width input fields */
+.form-container button, .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    margin: 5px 0 22px 0;
+    border: 0;
+    border-radius: 7% / 50%;
+    background: var(--white);
+}
+
+/*  cancel button */
+.form-container .cancel {
+    position: absolute;
+    cursor: pointer;
+    top : 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    clip-path: polygon(70% 0, 60% 10%, 70% 20%, 60% 30%, 70% 40%, 80% 30%, 90% 40%, 100% 30%, 90% 20%, 100% 10%, 90% 0, 80% 10%);
+    background-color: var(--black);
+}
+
+/*****************************************************/
+/*******chat window***************/
+
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 320px;
+    border: 3px solid var(--white);
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.chat-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 3px;
+}
+
+/* Full-width textarea */
+.chat-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: var(--white);
+    resize: none;
+    max-height: 20px;
+    grid-column: 2 / span 6;
+}
+
+/* When the textarea gets focus, do something */
+.chat-container textarea:focus {
+    background-color: var(--white);
+    outline: none;
+    grid-column: 2 / span 4;
+}
+
+/* Set a style for the submit/login button */
+.chat-container .btn {
+    background-color: var(--cyan);
+    color: var(--white);
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:20px;
+    grid-column: 6 / span 1;
+}
+
+
+/*  cancel button */
+.chat-container .cancel {
+    background-color: var(--white);
+    grid-column: 6 / span 1;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    clip-path: polygon(70% 0, 60% 10%, 70% 20%, 60% 30%, 70% 40%, 80% 30%, 90% 40%, 100% 30%, 90% 20%, 100% 10%, 90% 0, 80% 10%);
+    background-color: var(--black);
+}
+
+.chat-container h3{
+    background-color: var(--white);
+    grid-column: 1 / span 4;
+}
+
+
+.chat-container input {
+    background-color: var(--white);
+    grid-column: 1 / span 1;
+}
+
+.form-container .file-icon {
+    cursor: pointer;
+    top : 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 25%, 75% 0, 60% 0, 90% 30%, 70% 30%, 70% 0);
+    background-color: var(--black);
+}
+
+
+
+
+

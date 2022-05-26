@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>chat</title>
+  <script src="../parts/chat.js"></script>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/chat.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<button class="open-chat-button" onclick="openForm()">
+  <div class="message-icon"></div>
+</button>
+
+
+
+<div class="form-popup" id="myForm">
+  <form action="../php/action_page.php" class="form-container">
+    <h2>Mes discussions</h2>
+    <div class="chat-slider">
+
+      <button class="chat-button" onclick="openChat(Dr_Raoult )">Dr Raoult
+
+      </button>
+      <button class="chat-button" onclick="openChat(Admin )">Admin
+
+      </button>
+      <button class="chat-button" onclick="openChat( Labo_Eiffel_2 )">Labo-Eiffel-2
+
+      </button>
+      <button class="chat-button" onclick="openChat()">Dr Seguin
+
+      </button>
+      <button class="chat-button" onclick="openChat(Dr_André )">Dr André
+
+      </button>
+    </div>
+
+    <button type="button" class="cancel" onclick="closeForm()"></button>
+  </form>
+</div>
+
+<div class="chat-popup" id="chat">
+  <form class="chat-container">
+    <h3 id="receiver_name">receiver's name</h3>
+    <button type="button" class="cancel" onclick="closeChat()"></button>
+
+
+    <div class="msg-history"></div>
+    <input type="file" placeholder=" "><div class="file-icon"></div></input>
+    <button type="submit" class="btn">Send</button>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+
+  </form>
+</div>
+
+</body>
+</html>

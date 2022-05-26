@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Trouver mon rendez-vous</title>
+</head>
+<body>
+<header>
+
+
+</header>
+
+<!----------NAV AVEC LES FILTRES APPLIQUES------------->
+<div  id="my-filters">
+    <div id="my-type"><h4> ma prestatation </h4></div>
+    <div id="my-date"><h4> mes dates </h4></div>
+    <div id="my-heure"><h4> mon heure </h4></div>
+    <div id="my-place"><h4> ma localisation </h4></div>
+</div>
+
+<!----------NAV AVEC LES FILTRES DE RECHERCHE------------->
+<nav id="filters">
+    <h3> filtrer </h3>
+    <!-----------------CHOIX TYPE PRESTATION------->
+        <button class="dropdown-btn" id="type">
+            <h4> type de prestatation </h4>
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <h5> Général</h5>
+            <input type="checkbox">généraliste</input>
+
+            <h5> Spécialistes</h5>
+
+            <input type="checkbox">addictologie</input>
+            <input type="checkbox">andrologie</input>
+            <input type="checkbox">Cardiologie</input>
+            <input type="checkbox">Dermatologie</input>
+            <input type="checkbox">Gastro-Hépato-Entérologie</input>
+            <input type="checkbox">Gynécologie</input>
+            <input type="checkbox"> I.S.T</input>
+            <input type="checkbox">Ostéopathie</input>
+
+            <h5> Laboratoires</h5>
+            <input type="checkbox">depistage covid</input>
+            <input type="checkbox">prise de sang</input>
+            <input type="checkbox">prise d'urine</input>
+            <input type="checkbox">don de sang</input>
+
+        </div>
+    <!-----------------CHOIX DATE------->
+    <button class="dropdown-btn" id="date">
+        <h4> date </h4>
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+
+        <input type="date"> entre le</input>
+        <input type="date"> et le </input>
+    </div>
+
+    <!-----------------CHOIX HEURE------->
+    <button class="dropdown-btn" id="heure">
+        <h4> heure </h4>
+        <i  class="fa-fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <input type="time" min="8" max="20"  >min.</input>
+        <input type="time" min="8" max="20"  >max.</input>
+    </div>
+
+    <!-----------------CHOIX LIEU------->
+    <button class="dropdown-btn" id="place">
+        <h4> Campus </h4>
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <h5> France</h5>
+
+        <input type="checkbox">Beaune</input>
+        <input type="checkbox">Bordeaux </input>
+        <input type="checkbox">Chambéry</input>
+        <input type="checkbox">Lyon</input>
+        <input type="checkbox">Paris</input>
+
+        <h5> Etranger</h5>
+
+        <input type="checkbox">Abidjan</input>
+        <input type="checkbox">Barcelone</input>
+        <input type="checkbox">Genève</input>
+        <input type="checkbox">Londres</input>
+        <input type="checkbox">monaco</input>
+        <input type="checkbox">Munich</input>
+        <input type="checkbox">San Francisco</input>
+    </div>
+
+
+</nav>
+
+
+
+
+<section id="results">
+
+</section>
+
+
+
+
+<footer></footer>
+</body>
+</html>

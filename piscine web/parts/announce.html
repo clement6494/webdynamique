@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>announce</title>
+    <script src="lib/payment.js"></script>
+</head>
+<body>
+
+<div class="announce" id="pro_id_announce">
+    <h3>Pro_id</h3>
+    <img src="img/raoult.jpg">
+    <h4>Salle: Salle_id</h4>
+    <p> Lorem ipsum description de medecin/labo</p>
+    <button type="button" class="btn" onclick="openAnnounce(pro_id)">voir plus</button>
+
+
+</div>
+
+<div class="popup" id="pro_id_card">
+<form class="announce-container">
+    <h3>Pro_id</h3>
+    <button type="button" class="cancel" onclick="closeChat()"></button>
+    <img src="img/raoult.jpg">
+    <h4>Salle: Salle_id</h4>
+    <h4>Email: PRO_PHONE_NUMBER</h4>
+    <h4>Tel.: pro_id@edu.ece.fr</h4>
+    <p> Lorem ipsum description de medecin/labo</p>
+
+    <table class="time-table">autres disponibilités </table>
+    <button type="button" class="btn" onclick="takeRDV(pro_id)">prendre un RDV</button>
+    <button type="button" class="btn" onclick="openChat(pro_id)">envoyer un message</button>
+    <button type="button" class="btn" onclick="showCV(pro_id)">voir CV</button>
+
+
+
+</form>
+</div>
+
+<div class="popup" id="reservation">
+    <form class="reservation-container">
+        <h3>Fiche info RDV</h3>
+
+        <h4>date et heure:</h4>
+        <input type="datetime-local">
+
+        <!--afficher pour general Spécialiste ,mais pas Labo -->
+        <h4>motif:</h4>
+        <textarea name="motif" required placeholder="indiquez motif/symptomes/attentes" maxlength="500"></textarea>
+
+        <h4>infos complémentaires:</h4>
+        <textarea name="motif"  placeholder="des infos complementaires... (optionnel)"></textarea>
+
+        <button type="button" class="btn" onclick="openPay(pro_id)">Poursuivre vers paiement</button>
+
+    </form>
+
+
+</div>
+
+<div class="popup" id="pay">
+
+    <form class="payment-container" novalidate autocomplete="on">
+        <h4>Numero carte:</h4>
+        <input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" required>
+        <h4>Date d'expiration:</h4>
+        <input type="text" class="cc-exp" pattern="\d*" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" required maxlength="9">
+        <h4>CVC</h4>
+        <input type="text" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="Security code" required  autocomplete="off">
+        <h4>Restrict Numeric</h4>
+        <input type="text" data-numeric>
+        <h4 class="validation"></h4>
+        <button type="submit">Payer</button>
+    </form>
+
+</div>
+
+</body>
+</html>

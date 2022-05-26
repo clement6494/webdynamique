@@ -1,0 +1,40 @@
+body {
+    font-size: small;
+}
+table {
+    border: medium solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr th, td {
+    text-align: center;
+    padding: 1.5px;
+}
+table tr th {
+    border: medium solid black;
+    background-color: yellow;
+    text-decoration: underline;
+}
+table tr td {
+    border: thin solid gray;
+}
+.bg-rouge {
+    background-color: red;
+}
+.bg-rouge a {
+    display: block;
+    color: red;
+    text-decoration: none;
+}
+.nobordertop {
+    border-top: none;
+}
+.noborderleft {
+    border-left: none;
+}
+.noborderright {
+    border-right: none;
+}
+.noborderbottom {
+    border-bottom: none;
+}

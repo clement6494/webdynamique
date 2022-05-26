@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat</title>
+    <script src="chat.js"></script>
+
+    <link href="../css/chat.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<button class="open-chat-button" onclick="openForm()">
+    <div class="message-icon"> </div>
+</button>
+
+
+
+<div class="form-popup" id="myForm">
+    <form action="/php/action_page.php" class="form-container">
+        <h2>Mes discussions</h2>
+        <div class="chat-slider">
+
+            <button class="chat-button" onclick="opentchat(Raoult)">Dr Raoult
+
+            </button>
+            <button class="chat-button" onclick="opentchat(Admin)">Admin
+
+            </button>
+            <button class="chat-button" onclick="opentchat(Labo-Eiffel-2)">Labo-Eiffel-2
+
+            </button>
+            <button class="chat-button" onclick="opentchat(Seguin)">Dr Seguin
+
+            </button>
+            <button class="chat-button" onclick="opentchat(Andre)">Dr André
+
+            </button>
+        </div>
+
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+    </form>
+</div>
+
+<div class="chat-popup" id="chat">
+        <form action="/php/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+</div>
+
+</body>
+</html>

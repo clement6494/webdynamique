@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/top%20navbar.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+<div class="grid-container">
+<!--<div class="topnav"> -->
+<div  id="home">
+    <a  href="../home.html">
+        <img class="logo" src="../img/Sans%20titre.png" alt="home" />
+
+    </a>
+</div>
+<div id="dropdown" class="dropdown">
+    <button class="dropbtn">Tout Parcourir</button>
+    <div class="dropdown-content">
+        <a href="#">Médecine généraliste</a>
+        <a href="#">Médecine spécialisée</a>
+        <a href="#">trouver un Laboratoire</a>
+    </div>
+</div>
+
+<div  id="searchbar">
+    <input  type="text" name="search" placeholder="Rechercher...">
+</div>
+
+<div  id="login-btn">
+    <button class="item"  onclick="openForm()" name="connexion">Connexion</button>
+</div>
+
+    <div  id="account">
+        <a class="item"  href="myaccount.html">mon compte</a>
+    </div>
+
+
+</div>
+    <!----END TOP navbar-->
+
+<!--------POPups html--------->
+
+
+</header>
+
+<div class="popup" id="register">
+
+    <form action="/php/action_page.php" class="form-container" id="login">
+
+        <h3>Je possède un compte</h3>
+
+        <label for="Email"><b>Email</b></label>
+        <input type="email" placeholder="example@edu.ece.fr" name="mail" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="password" name="psw" required>
+
+        <button type="submit" class="btn">se connecter</button>
+        <a href="forgot-password.html">mot de pass oublié ?</a>
+    </form>
+
+    <form action="/php/action_page.php" class="form-container" id="sign-in">
+        <h3>Nouvel utilisateur ?</h3>
+        <button type="submit" onclick="Sign_in()" class="btn">S'inscrire'</button>
+
+    </form>
+
+    <form action="/php/action_page.php" class="form-container" id="professionnal">
+
+    <button type="button" class="btn" onclick="LoginPro()">
+            <h3>Je suis un professionnel de santé</h3>
+        </button>
+    </form>
+</div>
+
+<div class="popup" id="register-pro">
+
+    <form action="/php/action_page.php" class="form-container" id="login-pro">
+
+        <h3>Connexion</h3>
+
+        <label for="Email"><b>Email</b></label>
+        <input type="email" placeholder="example@edu.ece.fr" name="msg" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="password" name="msg" required>
+
+        <button type="submit" class="btn">se connecter</button>
+        <a href="forgot-password.html">mot de pass oublié ?</a>
+    </form>
+
+
+</div>
+
+</body>
+</html>

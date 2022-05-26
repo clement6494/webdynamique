@@ -1,0 +1,52 @@
+
+
+
+:root {
+    /* template of colors */
+    --dark: #24292b;
+    --light-cyan: #90ece3;
+    --dark-cyan: #008384;
+    --cyan: #149c9a;
+    --black: #202325;
+    --white: #fdfdfe;
+    --grey: #4b5155;
+}
+/**************************************/
+/* config grid*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    gap: 3px;
+    background-color: var(--cyan);
+
+
+}
+/***grid elements******************/
+.grid-container > div {
+    background-color: var(--white);
+
+    padding: 20px 0;
+    font-size: 30px;
+
+}
+#events{
+    grid-column: 1 / span 12;
+    margin-top: 1px;
+}
+
+#doctors{
+    grid-column: 1 / span 12;
+    background-image: url('../img/doctor.png') ;
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    background-size: 75% auto   ;
+    margin-top: 1px;
+}
+
+#footer{
+    grid-column: 1 / span 12;
+    margin-top: 1px;
+}
+
+a:link {text-underline: none}

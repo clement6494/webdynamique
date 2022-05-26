@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon profil</title>
+
+</head>
+<body>
+    <div class="grid-container">
+        <!--<div class="topnav"> -->
+        <div  id="home">
+            <a  href="../../home.html">
+                <img class="logo" src="../../img/Sans%20titre.png" alt="home" />
+
+            </a>
+        </div>
+        <div id="dropdown" class="dropdown">
+            <button class="dropbtn">Tout Parcourir</button>
+            <div class="dropdown-content">
+                <a href="#">Médecine généraliste</a>
+                <a href="#">Médecine spécialisée</a>
+                <a href="#">trouver un Laboratoire</a>
+            </div>
+        </div>
+
+        <div  id="searchbar">
+            <input  type="text" name="search" placeholder="Rechercher...">
+        </div>
+
+        <div  id="login">
+            <button id="item-4"   name="connexion">Connexion</button>
+        </div>
+        <!----END TOP navbar-->
+
+    <nav>
+        <a href="user_profile.html" class="nav_btn">mon Profil</a>
+        <a href="user_RDV.html" class="nav_btn">mes RDV</a>
+        <a href="user_mailbox.html" class="nav_btn">messagerie</a>
+        <a href="user_settings.html" class="nav_btn">paramètres</a>
+        <a href="user_history.html" class="nav_btn">historique</a>
+
+    </nav>
+
+    <section class="profile">
+        <img class="profile_picture" src="default_profile.png" alt="photo de profil">
+        <h2 class="pseudo"> Prenom + Nom</h2>
+        <div  class="folder" id="folder_pres">  </div>  <!-- inserer fiche pacient-->
+        <textarea class="folder" id="folder_modif" > </textarea>
+        <input type="file">
+        <button class="btn" onclick="modifyFolder()" name="modify">modifier</button>
+        <button class="btn" onclick="saveFolder()" name="save">enregistrer</button>
+    </section>
+
+
+
+    </div>
+</body>
+</html>
